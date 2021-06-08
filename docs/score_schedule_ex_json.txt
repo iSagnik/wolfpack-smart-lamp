@@ -1,0 +1,673 @@
+{
+    "sports": [
+        {
+            "id": "40",
+            "uid": "s:40",
+            "name": "Basketball",
+            "slug": "basketball",
+            "leagues": [
+                {
+                    "id": "41",
+                    "uid": "s:40~l:41",
+                    "name": "NCAA Men's Basketball",
+                    "abbreviation": "NCAAM",
+                    "shortName": "NCAAM",
+                    "slug": "mens-college-basketball",
+                    "isTournament": false,
+                    "events": [
+                        {
+                            "gamecastAvailable": true,
+                            "playByPlayAvailable": true,
+                            "commentaryAvailable": false,
+                            "recent": false,
+                            "id": "401310865",
+                            "competitionId": "401310865",
+                            "uid": "s:40~l:41~e:401310865~c:401310865",
+                            "date": "2021-04-06T01:20:00Z",
+                            "timeValid": true,
+                            "name": "Baylor Bears at Gonzaga Bulldogs",
+                            "shortName": "BAY @ GONZ",
+                            "season": 2021,
+                            "seasonStartDate": "2020-07-01T07:00:00Z",
+                            "seasonEndDate": "2021-04-07T06:59:00Z",
+                            "seasonType": "3",
+                            "seasonTypeHasGroups": false,
+                            "group": {
+                                "groupId": "3",
+                                "name": "Postseason",
+                                "abbreviation": "post",
+                                "shortName": "POST"
+                            },
+                            "week": 4,
+                            "weekText": "Week 4",
+                            "period": 2,
+                            "clock": "0:00",
+                            "status": "post",
+                            "summary": "Final",
+                            "fullStatus": {
+                                "clock": 0.0,
+                                "displayClock": "0:00",
+                                "period": 2,
+                                "type": {
+                                    "id": "3",
+                                    "name": "STATUS_FINAL",
+                                    "state": "post",
+                                    "completed": true,
+                                    "description": "Final",
+                                    "detail": "Final",
+                                    "shortDetail": "Final"
+                                }
+                            },
+                            "note": "Men's Basketball Championship - National Championship",
+                            "notes": [
+                                {
+                                    "type": "event",
+                                    "headline": "Men's Basketball Championship - National Championship",
+                                    "text": "Men's Basketball Championship - National Championship"
+                                }
+                            ],
+                            "link": "http://www.espn.com/mens-college-basketball/game/_/gameId/401310865",
+                            "links": [
+                                {
+                                    "language": "en-US",
+                                    "rel": [
+                                        "summary",
+                                        "desktop",
+                                        "event"
+                                    ],
+                                    "href": "http://www.espn.com/mens-college-basketball/game/_/gameId/401310865",
+                                    "text": "Gamecast",
+                                    "isExternal": false,
+                                    "isPremium": false
+                                },
+                                {
+                                    "language": "en-US",
+                                    "rel": [
+                                        "boxscore",
+                                        "desktop",
+                                        "event"
+                                    ],
+                                    "href": "http://www.espn.com/mens-college-basketball/boxscore/_/gameId/401310865",
+                                    "text": "Box Score",
+                                    "isExternal": false,
+                                    "isPremium": false
+                                }
+                            ],
+                            "onWatch": false,
+                            "broadcasts": [
+                                {
+                                    "type": "TV",
+                                    "station": "CBS",
+                                    "slug": "cbs",
+                                    "priority": 1,
+                                    "lang": "en",
+                                    "region": "us",
+                                    "typeId": 1,
+                                    "isNational": true,
+                                    "broadcasterId": 44,
+                                    "broadcastId": 44,
+                                    "name": "CBS",
+                                    "shortName": "CBS",
+                                    "callLetters": "CBS"
+                                }
+                            ],
+                            "broadcast": "CBS",
+                            "odds": {
+                                "provider": {
+                                    "id": "45",
+                                    "name": "William Hill (New Jersey)",
+                                    "priority": 1
+                                },
+                                "details": "GONZ -4.5",
+                                "overUnder": 158.5,
+                                "spread": -4.5,
+                                "overOdds": -110.0,
+                                "underOdds": -110.0,
+                                "awayTeamOdds": {
+                                    "favorite": false,
+                                    "underdog": true,
+                                    "moneyLine": 185,
+                                    "spreadOdds": -105.0,
+                                    "team": {
+                                        "id": "239",
+                                        "abbreviation": "BAY"
+                                    }
+                                },
+                                "homeTeamOdds": {
+                                    "favorite": true,
+                                    "underdog": false,
+                                    "moneyLine": -190,
+                                    "spreadOdds": -105.0,
+                                    "team": {
+                                        "id": "2250",
+                                        "abbreviation": "GONZ"
+                                    }
+                                },
+                                "links": [],
+                                "moneylineWinner": false,
+                                "spreadWinner": false,
+                                "home": {
+                                    "moneyLine": -190
+                                },
+                                "away": {
+                                    "moneyLine": 185
+                                }
+                            },
+                            "competitors": [
+                                {
+                                    "id": "2250",
+                                    "uid": "s:40~l:41~t:2250",
+                                    "type": "team",
+                                    "order": 0,
+                                    "homeAway": "home",
+                                    "winner": false,
+                                    "score": "70",
+                                    "record": "31-1",
+                                    "tournamentMatchup": {
+                                        "position": 1,
+                                        "seed": "1"
+                                    },
+                                    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png",
+                                    "logoDark": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/2250.png",
+                                    "displayName": "Gonzaga Bulldogs",
+                                    "name": "Gonzaga",
+                                    "abbreviation": "GONZ",
+                                    "location": "Gonzaga",
+                                    "color": "002967",
+                                    "alternateColor": "cfd4d8",
+                                    "group": "29",
+                                    "rank": 1,
+                                    "competitionIdPrevious": "401310867"
+                                },
+                                {
+                                    "id": "239",
+                                    "uid": "s:40~l:41~t:239",
+                                    "type": "team",
+                                    "order": 1,
+                                    "homeAway": "away",
+                                    "winner": true,
+                                    "score": "86",
+                                    "record": "28-2",
+                                    "tournamentMatchup": {
+                                        "position": 2,
+                                        "seed": "1"
+                                    },
+                                    "logo": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png",
+                                    "logoDark": "https://a.espncdn.com/i/teamlogos/ncaa/500-dark/239.png",
+                                    "displayName": "Baylor Bears",
+                                    "name": "Baylor",
+                                    "abbreviation": "BAY",
+                                    "location": "Baylor",
+                                    "color": "004834",
+                                    "alternateColor": "ffb81c",
+                                    "group": "8",
+                                    "rank": 1,
+                                    "competitionIdPrevious": "401310866"
+                                }
+                            ],
+                            "video": {
+                                "source": "espn",
+                                "id": 31201377,
+                                "headline": "Baylor dominates Gonzaga to win first men's basketball championship",
+                                "caption": "Baylor starts hot and never looks back as it dismantles Gonzaga 86-70 to take home the national title.",
+                                "description": "Baylor starts hot and never looks back as it dismantles Gonzaga 86-70 to take home the national title.",
+                                "premium": false,
+                                "ad": {
+                                    "sport": "ncb",
+                                    "bundle": "nobillboard_sportscenter"
+                                },
+                                "tracking": {
+                                    "sportName": "ncb",
+                                    "leagueName": "No League",
+                                    "coverageType": "Final Game Highlight",
+                                    "trackingName": "*UNPUB 6/30* COM_NCB Highlight (Baylor dominates Gonzaga to win first men’s basketball championship) 2021/04/05 ESHEET",
+                                    "trackingId": "dm_210406_Baylor_Gonzaga_SC_highlight"
+                                },
+                                "cerebroId": "606be008be6ab31ea510be18",
+                                "pccId": "11065d72-5285-4110-b6bb-62fc3358056a",
+                                "lastModified": "2021-04-06T04:24:15Z",
+                                "originalPublishDate": "2021-04-06T04:11:56Z",
+                                "timeRestrictions": {
+                                    "embargoDate": "2021-04-06T04:11:56Z",
+                                    "expirationDate": "2021-06-30T04:11:56Z"
+                                },
+                                "deviceRestrictions": {
+                                    "type": "whitelist",
+                                    "devices": [
+                                        "desktop",
+                                        "settop",
+                                        "handset",
+                                        "tablet"
+                                    ]
+                                },
+                                "geoRestrictions": {
+                                    "type": "whitelist",
+                                    "countries": [
+                                        "AS",
+                                        "SV",
+                                        "BZ",
+                                        "BA",
+                                        "MC",
+                                        "DE",
+                                        "SG",
+                                        "GW",
+                                        "GU",
+                                        "CF",
+                                        "SL",
+                                        "AT",
+                                        "HT",
+                                        "IQ",
+                                        "BM",
+                                        "GY",
+                                        "CY",
+                                        "MM",
+                                        "UZ",
+                                        "GQ",
+                                        "CO",
+                                        "TT",
+                                        "NZ",
+                                        "FR",
+                                        "AZ",
+                                        "SD",
+                                        "MD",
+                                        "RU",
+                                        "SZ",
+                                        "MF",
+                                        "LB",
+                                        "BG",
+                                        "CU",
+                                        "MG",
+                                        "TD",
+                                        "PW",
+                                        "ER",
+                                        "TZ",
+                                        "MH",
+                                        "RW",
+                                        "BR",
+                                        "ID",
+                                        "JO",
+                                        "GA",
+                                        "PA",
+                                        "ME",
+                                        "ZW",
+                                        "LT",
+                                        "KZ",
+                                        "BS",
+                                        "CM",
+                                        "LS",
+                                        "CL",
+                                        "CD",
+                                        "HK",
+                                        "TR",
+                                        "MU",
+                                        "PS",
+                                        "OM",
+                                        "NO",
+                                        "NI",
+                                        "AI",
+                                        "KW",
+                                        "ET",
+                                        "MX",
+                                        "AO",
+                                        "GT",
+                                        "GF",
+                                        "MK",
+                                        "ZM",
+                                        "BB",
+                                        "VI",
+                                        "SR",
+                                        "SK",
+                                        "FI",
+                                        "ES",
+                                        "ML",
+                                        "LU",
+                                        "UA",
+                                        "AM",
+                                        "CV",
+                                        "CZ",
+                                        "LC",
+                                        "TC",
+                                        "RE",
+                                        "QA",
+                                        "NG",
+                                        "BN",
+                                        "BO",
+                                        "IS",
+                                        "VA",
+                                        "MZ",
+                                        "GB",
+                                        "UK",
+                                        "PT",
+                                        "IL",
+                                        "BY",
+                                        "DK",
+                                        "PE",
+                                        "MP",
+                                        "GM",
+                                        "IE",
+                                        "US",
+                                        "PR",
+                                        "UM",
+                                        "UG",
+                                        "HU",
+                                        "HR",
+                                        "GH",
+                                        "AE",
+                                        "HN",
+                                        "BI",
+                                        "TM",
+                                        "BW",
+                                        "BJ",
+                                        "BH",
+                                        "IT",
+                                        "FM",
+                                        "AL",
+                                        "CI",
+                                        "DJ",
+                                        "CG",
+                                        "SY",
+                                        "KY",
+                                        "UY",
+                                        "SO",
+                                        "YE",
+                                        "KH",
+                                        "LA",
+                                        "KM",
+                                        "PY",
+                                        "MW",
+                                        "AW",
+                                        "GD",
+                                        "BE",
+                                        "NL",
+                                        "BQ",
+                                        "DO",
+                                        "EC",
+                                        "VG",
+                                        "MR",
+                                        "TG",
+                                        "SC",
+                                        "NE",
+                                        "CN",
+                                        "SM",
+                                        "LI",
+                                        "VN",
+                                        "VC",
+                                        "RO",
+                                        "KG",
+                                        "MS",
+                                        "PH",
+                                        "GR",
+                                        "KN",
+                                        "LV",
+                                        "SN",
+                                        "LR",
+                                        "SE",
+                                        "TH",
+                                        "BF",
+                                        "MO",
+                                        "KE",
+                                        "NA",
+                                        "SX",
+                                        "PL",
+                                        "AD",
+                                        "AU",
+                                        "MQ",
+                                        "AG",
+                                        "MY",
+                                        "ST",
+                                        "GE",
+                                        "CA",
+                                        "EE",
+                                        "SA",
+                                        "VE",
+                                        "IR",
+                                        "RS",
+                                        "MT",
+                                        "SS",
+                                        "CR",
+                                        "JM",
+                                        "SI",
+                                        "GN",
+                                        "GP",
+                                        "TJ",
+                                        "CH",
+                                        "FJ"
+                                    ]
+                                },
+                                "syndicatable": false,
+                                "duration": 105,
+                                "categories": [
+                                    {
+                                        "id": 9576,
+                                        "description": "Men's College Basketball",
+                                        "type": "league",
+                                        "sportId": 41,
+                                        "leagueId": 41,
+                                        "league": {
+                                            "id": 41,
+                                            "description": "Men's College Basketball",
+                                            "links": {
+                                                "api": {
+                                                    "leagues": {
+                                                        "href": "http://api.espn.com/v1/sports/basketball/mens-college-basketball"
+                                                    }
+                                                },
+                                                "web": {
+                                                    "leagues": {
+                                                        "href": "https://www.espn.com/mens-college-basketball/?ex_cid=espnapi_internal"
+                                                    }
+                                                },
+                                                "mobile": {
+                                                    "leagues": {
+                                                        "href": "http://m.espn.go.com/ncb/?ex_cid=espnapi_internal"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "uid": "s:40~l:41"
+                                    },
+                                    {
+                                        "id": 3221,
+                                        "description": "Baylor Bears",
+                                        "type": "team",
+                                        "sportId": 41,
+                                        "teamId": 239,
+                                        "team": {
+                                            "id": 239,
+                                            "description": "Baylor Bears",
+                                            "links": {
+                                                "api": {
+                                                    "teams": {
+                                                        "href": "http://api.espn.com/v1/sports/basketball/mens-college-basketball/teams/239"
+                                                    }
+                                                },
+                                                "web": {
+                                                    "teams": {
+                                                        "href": "https://www.espn.com/mens-college-basketball/team/_/id/239/baylor-bears?ex_cid=espnapi_internal"
+                                                    }
+                                                },
+                                                "mobile": {
+                                                    "teams": {
+                                                        "href": "http://m.espn.go.com/ncb/clubhouse?teamId=239&ex_cid=espnapi_internal"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "uid": "s:40~l:41~t:239"
+                                    },
+                                    {
+                                        "id": 3417,
+                                        "description": "Gonzaga Bulldogs",
+                                        "type": "team",
+                                        "sportId": 41,
+                                        "teamId": 2250,
+                                        "team": {
+                                            "id": 2250,
+                                            "description": "Gonzaga Bulldogs",
+                                            "links": {
+                                                "api": {
+                                                    "teams": {
+                                                        "href": "http://api.espn.com/v1/sports/basketball/mens-college-basketball/teams/2250"
+                                                    }
+                                                },
+                                                "web": {
+                                                    "teams": {
+                                                        "href": "https://www.espn.com/mens-college-basketball/team/_/id/2250/gonzaga-bulldogs?ex_cid=espnapi_internal"
+                                                    }
+                                                },
+                                                "mobile": {
+                                                    "teams": {
+                                                        "href": "http://m.espn.go.com/ncb/clubhouse?teamId=2250&ex_cid=espnapi_internal"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "uid": "s:40~l:41~t:2250"
+                                    }
+                                ],
+                                "gameId": 401310865,
+                                "keywords": [],
+                                "posterImages": {
+                                    "default": {
+                                        "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_default.jpg",
+                                        "width": 576,
+                                        "height": 324
+                                    },
+                                    "full": {
+                                        "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.jpg"
+                                    },
+                                    "wide": {
+                                        "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_5x2.jpg"
+                                    },
+                                    "square": {
+                                        "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_1x1.jpg"
+                                    }
+                                },
+                                "images": [
+                                    {
+                                        "name": "Poster Image",
+                                        "url": "https://media.video-cdn.espn.com/images/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.jpg",
+                                        "alt": "",
+                                        "caption": "",
+                                        "credit": "",
+                                        "width": 576,
+                                        "height": 324
+                                    }
+                                ],
+                                "thumbnail": "https://a.espncdn.com/media/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.jpg",
+                                "links": {
+                                    "api": {
+                                        "self": {
+                                            "href": "http://api.espn.com/v1/video/clips/31201377"
+                                        },
+                                        "artwork": {
+                                            "href": "https://artwork.api.espn.com/artwork/collections/media/11065d72-5285-4110-b6bb-62fc3358056a"
+                                        }
+                                    },
+                                    "web": {
+                                        "href": "http://espn.go.com/video/clip?id=31201377&ex_cid=espnapi_internal",
+                                        "short": {
+                                            "href": "https://es.pn/3dAWxUl"
+                                        },
+                                        "self": {
+                                            "href": "http://espn.go.com/video/clip?id=31201377&ex_cid=espnapi_internal"
+                                        }
+                                    },
+                                    "source": {
+                                        "mezzanine": {
+                                            "href": "https://media.video-origin.espn.com/espnvideo/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.mp4"
+                                        },
+                                        "flash": {
+                                            "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.smil"
+                                        },
+                                        "hds": {
+                                            "href": "https://hds.video-cdn.espn.com/z/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_rel.smil/manifest.f4m"
+                                        },
+                                        "HLS": {
+                                            "href": "https://espnpackaging-vh.akamaihd.net/i/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.smil/master.m3u8",
+                                            "HD": {
+                                                "href": "https://espnpackaging-vh.akamaihd.net/i/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.smil/master.m3u8"
+                                            }
+                                        },
+                                        "HD": {
+                                            "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_720p30_2896k.mp4"
+                                        },
+                                        "full": {
+                                            "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_360p30_1464k.mp4"
+                                        },
+                                        "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight_360p30_1464k.mp4"
+                                    },
+                                    "mobile": {
+                                        "alert": {
+                                            "href": "http://m.espn.go.com/general/video/videoAlert?vid=31201377&ex_cid=espnapi_internal"
+                                        },
+                                        "source": {
+                                            "href": "https://media.video-cdn.espn.com/motion/2021/0406/dm_210406_Baylor_Gonzaga_SC_highlight/dm_210406_Baylor_Gonzaga_SC_highlight.mp4"
+                                        },
+                                        "href": "https://watch.auth.api.espn.com/video/auth/brightcove/11065d72-5285-4110-b6bb-62fc3358056a/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31201377",
+                                        "streaming": {
+                                            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/11065d72-5285-4110-b6bb-62fc3358056a/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31201377"
+                                        },
+                                        "progressiveDownload": {
+                                            "href": "https://watch.auth.api.espn.com/video/auth/brightcove/11065d72-5285-4110-b6bb-62fc3358056a/asset?UMADPARAMreferer=http://www.espn.com/video/clip?id=31201377"
+                                        }
+                                    }
+                                }
+                            },
+                            "appLinks": [
+                                {
+                                    "language": "en-US",
+                                    "rel": [
+                                        "summary",
+                                        "sportscenter",
+                                        "app",
+                                        "event"
+                                    ],
+                                    "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401310865",
+                                    "text": "Gamecast",
+                                    "shortText": "Summary",
+                                    "isExternal": false,
+                                    "isPremium": false
+                                },
+                                {
+                                    "language": "en-US",
+                                    "rel": [
+                                        "boxscore",
+                                        "sportscenter",
+                                        "app",
+                                        "event"
+                                    ],
+                                    "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401310865",
+                                    "text": "Box Score",
+                                    "shortText": "Box Score",
+                                    "isExternal": false,
+                                    "isPremium": false
+                                },
+                                {
+                                    "language": "en-US",
+                                    "rel": [
+                                        "gamecast",
+                                        "sportscenter",
+                                        "app",
+                                        "event"
+                                    ],
+                                    "href": "sportscenter://x-callback-url/showGame?sportName=basketball&leagueAbbrev=mens-college-basketball&gameId=401310865",
+                                    "text": "Gamecast",
+                                    "shortText": "Gamecast",
+                                    "isExternal": false,
+                                    "isPremium": false
+                                }
+                            ]
+                        }
+                    ],
+                    "smartdates": [
+                        "2021-03-30T07:00Z",
+                        "2021-04-03T07:00Z",
+                        "2021-04-05T07:00Z"
+                    ]
+                }
+            ]
+        }
+    ],
+    "zipcodes": {}
+}
