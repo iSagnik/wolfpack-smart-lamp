@@ -1,2 +1,2 @@
-# NCSU Bell Tower Smart Lamp
+# Wolfpack Smart Lamp
  Smart lamp designed and built for the DigiKey Makes Competition
