@@ -6,6 +6,7 @@
 // Load Wi-Fi library
 #include <WiFi.h>
 
+
 // Replace with your network credentials
 const char* ssid = "ARAVS-PC";
 const char* password = "password";
