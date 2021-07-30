@@ -4,12 +4,6 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/get_toggled_status') 
-def get_toggled_status():
-  current_status = request.args.get('status')
-  print(current_status)
-  return 'Toggled' if current_status == 'Untoggled' else 'Untoggled'
-
 def set_red_light(light, state):
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
@@ -30,16 +24,18 @@ def set_red_light(light, state):
 def update_light():
     state = request.args.get('state')
     light = request.args.get('light')
-    print("\n-------")
-    print(state)
-    print(light)
+
     set_red_light(light, state)
         
-            
-    template_data = {                                                           
-        'title' : state,                                                        
-    }   
-    return render_template('index.html', **template_data)
+    return render_template('index.html')
+
+@app.route("/alarm")
+def alarm():
+    return render_template('alarm.html')
+
+@app.route("/wolfpack")
+def wolfpack():
+    return render_template('wolfpack.html')
 
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', port=8080, debug=True)
+   app.run(debug=True)
