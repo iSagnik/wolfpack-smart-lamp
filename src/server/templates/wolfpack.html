@@ -28,20 +28,22 @@
       <div class="center">
          <a class="active" href="/wolfpack">Wolfpack</a>
          <a href="/">Home</a>
-         <a href="/alarm">Alarm</a>
+         <a href="/fight_song">Fight Song</a>
       </div>
    </div>
 
    <div class="main">
       <div class="center">
          <div class="homeMain">
-            <div class = "time" id="MyClockDisplay" onload="showTime()"></div>
-            <br>
-            <span id="date"></span>
-            <script>var dt = new Date();
-            let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-               document.getElementById("date").innerHTML=dt.toLocaleString( 'en-US', options);
-            </script>  
+            <h2>Next Game</h2>
+            <h3>{{date}}</h3>
+            <h3>{{location}}</h3>
+            <h4>{{time}}</h4>
+            <div class = "teams">
+                <span class = "comp1">{{comp1}}</span>
+                VS
+                <span class = "comp2">{{comp2}}</span>
+            </div>
          </div>
       </div>
    </div>
