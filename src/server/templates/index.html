@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../static/style.css">
+   <!-- <script src = "../static/script.js"></script> -->
+</head>
+
+<body>
+   <script>
+      function toggleRed(button) {
+         if (button.value == "Red Off") {
+            button.value = "Red On";
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "/?light=red&state=on", false); // false for synchronous request
+            xmlHttp.send(null);
+            //return xmlHttp.responseText;
+         } else {
+            button.value = "Red Off";
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "/?light=red&state=off", false); // false for synchronous request
+            xmlHttp.send(null);
+         }
+
+
+      }
+      function toggleWhite(button) {
+         if (button.value == "White Off") {
+            button.value = "White On";
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "/?light=white&state=on", false); // false for synchronous request
+            xmlHttp.send(null);
+            //return xmlHttp.responseText;
+         } else {
+            button.value = "White Off";
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", "/?light=white&state=off", false); // false for synchronous request
+            xmlHttp.send(null);
+         }
+      }
+   </script>
+   <header>
+      <!-- <label class="toggle-label">
+         <input type="checkbox"/>
+         <div class="switch">
+          <div></div>
+          <div></div>
+          <span></span>
+         </div>
+       </label> -->
+      <input type="button" value="Red Off" onclick="toggleRed(this);">
+      <input type="button" value="White Off" onclick="toggleWhite(this);">
+
+      <!-- <a href="/?light=red&state=on" id="red">Red On</a> -->
+      <!-- <a href="/?light=red&state=off" id="red">Red Off</a> -->
+   </header>
+   <div class="sidebar">
+      <div class="center">
+         <a href="#contact">Wolfpack</a>
+         <a class="active" href="#home">Home</a>
+         <a href="#news">Alarm</a>
+      </div>
+   </div>
+
+   <div class="main">
+      <div class="center">
+         <div class="homeMain">
+            <span class="time">
+               10:36:56
+               <!--          <div class="clock">
+     <div class="hours">
+       <div class="first">
+         <div class="number">0</div>
+       </div>
+       <div class="second">
+         <div class="number">0</div>
+       </div>
+     </div>
+     <div class="tick">:</div>
+     <div class="minutes">
+       <div class="first">
+         <div class="number">0</div>
+       </div>
+       <div class="second">
+         <div class="number">0</div>
+       </div>
+     </div>
+     <div class="tick">:</div>
+     <div class="seconds">
+       <div class="first">
+         <div class="number">0</div>
+       </div>
+       <div class="second infinite">
+         <div class="number">0</div>
+       </div>
+     </div>
+   </div> -->
+            </span>
+            <br>
+            <span class="date">Saturday, June 2021</span>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <p>8:36 AM</p>
+   </footer>
+
+</body>
+
+</html>
