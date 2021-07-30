@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO                                                                  
-from flask import Flask, render_template, request                                       
+from flask import Flask, render_template, request, Response                                      
 import requests
 import json
 import gzip
@@ -34,7 +34,9 @@ def update_light():
         
     return render_template('index.html')
 
+@app.route('/flicker')
 def flicker_lights():
+    print("Flicker Lights")
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
     GPIO.setup(17,GPIO.OUT, initial=GPIO.LOW)
@@ -48,17 +50,21 @@ def flicker_lights():
         GPIO.output(18,GPIO.LOW)
         time.sleep(1)
         GPIO.output(17,GPIO.LOW)
-    
+
 @app.route('/fight_song_player')
 def fight_song_player():
-    print("Fight Song Initialized")
-    
-    #play fight song
-    os.system("aplay -f cd -Dhw:1 ../../assets/FightSong.wav")
-    
-    #make lights flicker
-    flicker_lights()
-    return "success"
+    print("Song Queried")
+    path_to_file = "../../assets/FightSong.wav"
+
+    def generate():
+        with open(path_to_file, "rb") as fwav:
+            data = fwav.read(1024)
+            while data:
+                yield data
+                data = fwav.read(1024)
+    print("Song sent")
+    return Response(generate(), mimetype="audio/x-wav")
+
 
 @app.route('/fight_song')
 def fight_song():
