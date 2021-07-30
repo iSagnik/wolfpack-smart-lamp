@@ -7,8 +7,15 @@
    <script src = "../static/script.js"></script>
    <title>Wolfpack Smart Lamp</title>
 </head>
-
-<body>
+<script>
+    function playFightSong() {
+    console.log("Playing fight song")
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "/fight_song_player", false);
+    xhr.send(null);
+  }
+</script>
+<body onload="playFightSong()">
    <header>
       <!-- <label class="toggle-label">
          <input type="checkbox"/>
@@ -28,7 +35,7 @@
       <div class="center">
          <a href="/wolfpack">Wolfpack</a>
          <a href="/">Home</a>
-         <a class="active" href="/alarm">Fight Song</a>
+         <a class="active" href="/fight_song">Fight Song</a>
       </div>
    </div>
 
@@ -41,7 +48,8 @@
             <script>var dt = new Date();
             let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                document.getElementById("date").innerHTML=dt.toLocaleString( 'en-US', options);
-            </script>  
+            </script>
+            <h5>Playing the NC State Fight Song</h5>
          </div>
       </div>
    </div>

@@ -1,6 +1,5 @@
 console.log("Hello")
 document.addEventListener("DOMContentLoaded", function (event) {
-
   function toggleRed(button) {
     if (button.value == "Red Off") {
       button.value = "Red On";
@@ -63,4 +62,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   showTime();
-});
+})

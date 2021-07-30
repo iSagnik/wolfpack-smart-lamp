@@ -4,6 +4,8 @@ import requests
 import json
 import gzip
 from io import BytesIO
+import time
+import os
 
 app = Flask(__name__)
 
@@ -32,10 +34,35 @@ def update_light():
         
     return render_template('index.html')
 
-@app.route("/fight_song")
+def flicker_lights():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
+    GPIO.setup(17,GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(18,GPIO.OUT, initial=GPIO.LOW)
+    
+    t_end = time.time() + 40
+    while time.time() < t_end:
+        GPIO.output(18,GPIO.HIGH)
+        time.sleep(1)
+        GPIO.output(17,GPIO.HIGH)
+        GPIO.output(18,GPIO.LOW)
+        time.sleep(1)
+        GPIO.output(17,GPIO.LOW)
+    
+@app.route('/fight_song_player')
+def fight_song_player():
+    print("Fight Song Initialized")
+    
+    #play fight song
+    os.system("aplay -f cd -Dhw:1 ../../assets/FightSong.wav")
+    
+    #make lights flicker
+    flicker_lights()
+    return "success"
+
+@app.route('/fight_song')
 def fight_song():
     return render_template('fight_song.html')
-
 # @app.route("/wolfpack")
 # def wolfpack():
 #     return render_template('wolfpack.html')
