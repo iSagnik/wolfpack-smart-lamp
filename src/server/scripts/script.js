@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../static/style.css">
-   <title>Wolfpack Smart Lamp</title>
-   <script>
-      console.log("Hello")
+console.log("Hello")
       function toggleRed(button) {
          if (button.value == "Red Off") {
             button.value = "Red On";
@@ -78,46 +70,3 @@
          xmlHttp.open("GET", "/flicker", true); // false for synchronous request
          xmlHttp.send(null);
       }
-   </script>
-</head>
-
-<body>
-   <header>
-      <!-- <label class="toggle-label">
-         <input type="checkbox"/>
-         <div class="switch">
-          <div></div>
-          <div></div>
-          <span></span>
-         </div>
-       </label> -->
-      <input type="button" value="Red Off" onclick="toggleRed(this);">
-      <input type="button" value="White Off" onclick="toggleWhite(this);">
-
-      <!-- <a href="/?light=red&state=on" id="red">Red On</a> -->
-      <!-- <a href="/?light=red&state=off" id="red">Red Off</a> -->
-   </header>
-   <div class="sidebar">
-      <div class="center">
-         <a href="/wolfpack">Wolfpack</a>
-         <a class="active" href="/">Home</a>
-         <a href="/fight_song">Fight Song</a>
-      </div>
-   </div>
-
-   <div class="main">
-      <div class="center">
-         <div class="homeMain">
-            <div class="time" id="MyClockDisplay" onload="showTime()"></div>
-            <br>
-            <span id="date"></span>
-            <script>var dt = new Date();
-               let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-               document.getElementById("date").innerHTML = dt.toLocaleString('en-US', options);
-            </script>
-         </div>
-      </div>
-   </div>
-</body>
-
-</html>

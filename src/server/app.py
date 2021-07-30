@@ -25,14 +25,18 @@ def set_light(light, state):
         elif state == 'off':
             GPIO.output(17,GPIO.LOW)
 
-@app.route("/")                                                          
+@app.route("/")
+def index():
+    return render_template("index.html")    
+
+@app.route("/update-light")                                                  
 def update_light():
     state = request.args.get('state')
     light = request.args.get('light')
 
     set_light(light, state)
         
-    return render_template('index.html')
+    return "success"
 
 @app.route('/flicker')
 def flicker_lights():
