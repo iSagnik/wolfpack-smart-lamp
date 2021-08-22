@@ -31,9 +31,11 @@ def index():
 
 @app.route("/update-light")                                                  
 def update_light():
+
     state = request.args.get('state')
     light = request.args.get('light')
-
+    print(state)
+    print(light)
     set_light(light, state)
         
     return "success"
